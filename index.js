@@ -6,7 +6,7 @@ const {connectDB}=require('./config/dbConnection')
 app.use(express.json())
 
 const corsOption={
-    origin:["https://hoomans-server-2.onrender.com/"],
+    origin:"*",
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     optionsSuccessStatus: 204,
 }
